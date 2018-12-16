@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference android:persistent="false" android:title="@string/enable_gestures_title" android:key="enable_gestures" android:summary="@string/enable_gestures_summary" />
+    <PreferenceCategory android:title="@string/gestures_title" android:key="gestures">
+        <Preference android:persistent="false" android:title="@string/gesture_double_tap_title" android:key="gesture_double_tap" android:dependency="enable_gestures" />
+        <Preference android:persistent="false" android:title="@string/gesture_v_title" android:key="gesture_v" android:dependency="enable_gestures" />
+        <Preference android:persistent="false" android:title="@string/gesture_s_title" android:key="gesture_s" android:dependency="enable_gestures" />
+        <Preference android:persistent="false" android:title="@string/gesture_z_title" android:key="gesture_z" android:dependency="enable_gestures" />
+        <Preference android:persistent="false" android:title="@string/gesture_w_title" android:key="gesture_w" android:dependency="enable_gestures" />
+        <Preference android:persistent="false" android:title="@string/gesture_c_title" android:key="gesture_c" android:dependency="enable_gestures" />
+        <Preference android:persistent="false" android:title="@string/gesture_e_title" android:key="gesture_e" android:dependency="enable_gestures" />
+        <Preference android:persistent="false" android:title="@string/gesture_up_title" android:key="gesture_up" android:dependency="enable_gestures" />
+        <Preference android:persistent="false" android:title="@string/gesture_down_title" android:key="gesture_down" android:dependency="enable_gestures" />
+        <Preference android:persistent="false" android:title="@string/gesture_left_title" android:key="gesture_left" android:dependency="enable_gestures" />
+        <Preference android:persistent="false" android:title="@string/gesture_right_title" android:key="gesture_right" android:dependency="enable_gestures" />
+    </PreferenceCategory>
+</PreferenceScreen>

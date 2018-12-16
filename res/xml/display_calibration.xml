@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <SwitchPreference android:persistent="false" android:title="@string/kcal_enabled_title" android:key="kcal_enabled" android:summary="@string/kcal_enabled_summary" />
+    <com.asus.zenmotions.kcal.utils.SeekBarPreference android:persistent="false" android:layout="@layout/slider_preference" android:title="@string/kcal_color_temp" android:key="kcal_color_temp" android:dependency="kcal_enabled" android:recycleEnabled="false" app:default_value="6400" app:max_value="7000" app:min_value="1000" />
+    <com.asus.zenmotions.kcal.utils.SeekBarPreference android:persistent="false" android:layout="@layout/slider_preference" android:title="@string/kcal_red" android:key="kcal_red" android:dependency="kcal_enabled" android:recycleEnabled="false" app:default_value="256" app:max_value="256" app:min_value="0" />
+    <com.asus.zenmotions.kcal.utils.SeekBarPreference android:persistent="false" android:layout="@layout/slider_preference" android:title="@string/kcal_green" android:key="kcal_green" android:dependency="kcal_enabled" android:recycleEnabled="false" app:default_value="256" app:max_value="256" app:min_value="0" />
+    <com.asus.zenmotions.kcal.utils.SeekBarPreference android:persistent="false" android:layout="@layout/slider_preference" android:title="@string/kcal_blue" android:key="kcal_blue" android:dependency="kcal_enabled" android:recycleEnabled="false" app:default_value="256" app:max_value="256" app:min_value="0" />
+    <com.asus.zenmotions.kcal.utils.SeekBarPreference android:persistent="false" android:layout="@layout/slider_preference" android:title="@string/kcal_contrast" android:key="kcal_contrast" android:dependency="kcal_enabled" android:recycleEnabled="false" app:default_value="255" app:max_value="384" app:min_value="128" />
+    <com.asus.zenmotions.kcal.utils.SeekBarPreference android:persistent="false" android:layout="@layout/slider_preference" android:title="@string/kcal_saturation" android:key="kcal_saturation" android:dependency="kcal_enabled" android:recycleEnabled="false" app:default_value="256" app:max_value="383" app:min_value="224" />
+</PreferenceScreen>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/buttons_title">
+        <SwitchPreference android:title="@string/button_swap_title" android:key="button_swap" android:summary="@string/button_swap_summary" />
+        <SwitchPreference android:persistent="false" android:title="@string/proxi_title_head" android:key="proxi" android:summary="@string/proxi_summary_head" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/notification_slider">
+        <ListPreference android:entries="@array/notification_slider_action_entries" android:title="@string/top_position" android:key="slider_top" android:dialogTitle="@string/action" android:entryValues="@array/notification_slider_action_entry_values" />
+        <ListPreference android:entries="@array/notification_slider_action_entries" android:title="@string/middle_position" android:key="slider_middle" android:dialogTitle="@string/action" android:entryValues="@array/notification_slider_action_entry_values" />
+        <ListPreference android:entries="@array/notification_slider_action_entries" android:title="@string/bottom_position" android:key="slider_bottom" android:dialogTitle="@string/action" android:entryValues="@array/notification_slider_action_entry_values" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/graphics_title" android:key="graphics">
+        <SwitchPreference android:title="@string/srgb_mode_title" android:key="srgb" android:summary="@string/srgb_mode_summary" />
+        <SwitchPreference android:title="@string/dci_mode_title" android:key="dci" android:summary="@string/dci_mode_summary" />
+    </PreferenceCategory>
+</PreferenceScreen>
